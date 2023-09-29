@@ -1,0 +1,47 @@
+.cardDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.wr-cards {
+  width: 700px;
+  border: 1px #804140 solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardName {
+  color: grey;
+
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardItem {
+  height: 250px;
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+button {
+  background-color: #ffdcca;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #c3805f;
+  color: white;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}

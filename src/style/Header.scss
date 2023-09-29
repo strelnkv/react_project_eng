@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffdcca;
+  font-weight: 600;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+nav {
+  width: 40%;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+}
+li {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #804140;
+}

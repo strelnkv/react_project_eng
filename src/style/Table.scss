@@ -1,0 +1,16 @@
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th:last-child,
+td:last-child {
+  text-align: center;
+}
+.tableBtn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
