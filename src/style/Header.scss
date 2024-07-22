@@ -4,6 +4,8 @@
   align-items: center;
   background-color: #ffdcca;
   font-weight: 600;
+  position: sticky;
+  top: 0;
 }
 .navigation {
   display: flex;
@@ -19,7 +21,8 @@ nav {
   align-items: center;
 }
 .logo {
-  width: 100px;
+  width: 150px;
+  cursor: pointer;
 }
 li {
   cursor: pointer;

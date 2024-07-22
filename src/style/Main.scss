@@ -34,6 +34,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  border: #ffdcca 1px solid;
 }
 button:hover {
   cursor: pointer;
@@ -44,4 +45,25 @@ button:hover {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+}
+.disabled {
+  display: none;
+}
+.paragraph {
+  margin: 0;
+}
+.words {
+  display: flex;
+  justify-content: center;
+}
+.show_translation {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: #c3805f 1px solid;
+  border-radius: 5px;
+}
+.show_translation:hover {
+  background-color: transparent;
+  color: black;
+  cursor: auto;
 }
