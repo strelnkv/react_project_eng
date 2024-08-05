@@ -13,7 +13,11 @@ export default function TableLine(props) {
   const refEng = useRef();
 
   function edit() {
-    if (!inputState) {
+    console.log("инпут" + inputState);
+
+    if (inputState) {
+      setInputState(!inputState);
+
       if (inputValue.trim() === "") {
         alert("English word cannot be empty");
 
@@ -26,6 +30,8 @@ export default function TableLine(props) {
         refEng.current.focus();
         return;
       }
+
+      return;
     }
 
     setEngWord(inputValue);

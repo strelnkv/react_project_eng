@@ -1,8 +1,11 @@
 import React from "react";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useContext } from "react";
 import "../../style/Main.scss";
+import { WordsContext } from "../App/Words";
 
-export default function Main(props) {
+export default function Main() {
+  const { words } = useContext(WordsContext);
+
   const [buttonState, setButtonState] = useState("enabled");
   const [click, setClick] = useState(0);
   const [id, setId] = useState(0);
@@ -16,13 +19,13 @@ export default function Main(props) {
   }, [id]);
 
   function handlePrev() {
-    if (id < props.arrWords.length - 1) {
+    if (id < words.length - 1) {
       setId(id + 1);
       setButtonState("enabled");
     }
   }
   function handleNext() {
-    if (id < props.arrWords.length - 1) {
+    if (id < words.length - 1) {
       setId(id + 1);
       setButtonState("enabled");
     }
@@ -41,7 +44,7 @@ export default function Main(props) {
         <div className="wr-cards">
           <p className="cardName">CARDS</p>
           <div className="cardItem">
-            <p>{props.arrWords[id].english}</p>
+            <p>{words[id].english}</p>
           </div>
         </div>
         <button onClick={handleNext} className="cardsButton">
@@ -63,7 +66,7 @@ export default function Main(props) {
               : "show_translation"
           }
         >
-          {props.arrWords[id].russian}
+          {words[id].russian}
         </button>
       </div>
       <p className="words">Words learned: {click}</p>
